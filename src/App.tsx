@@ -1,4 +1,6 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
+
 import Header from './components/Header';
 import Main from './components/Main';
 import Pagination from './components/Pagination';
@@ -10,7 +12,10 @@ function App() {
     <div className="App">
       <Header />
       <Tabs />
-      <Main />
+      <Routes>
+        <Route path="/" element={<Main all={true} />} />
+        <Route path="/faves" element={<Main all={false} />} />
+      </Routes>
       <Pagination />
     </div>
   );

@@ -5,7 +5,7 @@ const Pagination = () => {
     <ul className="pagination-container">
        {/* Left navigation arrow */}
       <li className="pagination-item">
-        <div className="arrow left" />
+        <div className="arrow left" />&lt;
       </li>
       <li className="pagination-item">1</li>
       <li className="pagination-item">2</li>
@@ -14,7 +14,7 @@ const Pagination = () => {
       <li className="pagination-item">5</li>
       {/*  Right Navigation arrow */}
       <li className="pagination-item">
-        <div className="arrow right" />
+        <div className="arrow right" />&gt;
       </li>
     </ul>
   );

@@ -9,10 +9,10 @@ const linkStyle = {
 
 const Tabs = () => {
   return (
-    <>
+    <div className="navigation">
       <Link to="/" style={linkStyle}>All</Link>
       <Link to="/faves" style={linkStyle}>My faves</Link>
-    </>
+    </div>
   )
 };
 

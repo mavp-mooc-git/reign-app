@@ -13,8 +13,8 @@ function App() {
       <Header />
       <Tabs />
       <Routes>
-        <Route path="/" element={<Main all={true} />} />
-        <Route path="/faves" element={<Main all={false} />} />
+        <Route path="/" element={<Main type={"api"} />} />
+        <Route path="/faves" element={<Main type={"fav"} />} />
       </Routes>
       <Pagination />
     </div>

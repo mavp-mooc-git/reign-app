@@ -82,8 +82,6 @@ const Main = (props: Props) => {
     }
   });
 
-  (type === "api") ? console.info("data from api") : console.info("data from storage");
-
   const cleanData = uiData?.filter(d => {
     if(d?.author && d?.story_title && d?.story_url && d?.created_at) {
       return d;
@@ -92,7 +90,7 @@ const Main = (props: Props) => {
     }
   });
   
-  const handleChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
+  const handleChange = (event: { target: { value: string; }; }) => {
     setOption(event.target.value);
   };
 

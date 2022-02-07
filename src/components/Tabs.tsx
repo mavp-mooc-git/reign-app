@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const linkStyle = {
-  margin: "1rem",
   textDecoration: "none",
-  color: '#1797ff'
+  color: "#1797ff",
+  padding: "8px 40px",
+  borderRadius: "2px",
+  border: "solid 1px #1797ff"
 };
 
 const Tabs = () => {
